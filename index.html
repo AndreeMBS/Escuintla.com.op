@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="Andree Barrundia">
+    <meta name="viewport" content="width=device-width">
+	<title>Escuintla</title>
+	<style type="text/css">
+		html{
+			scroll-behavior: smooth;
+		}
+		h1 {
+			overflow: hidden;
+    		border-right: 0.15em solid #f5df04;
+    		white-space: nowrap;
+    		margin: 0 auto;
+    		letter-spacing: 0.15em;
+    		animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+		}
+		body {
+			background-color: #b3d9ff;
+			 font-family: 'Arial', sans-serif;
+    		margin: 0;
+    		padding: 0;
+    		color: #333;
+    		line-height: 1.6;
+		}
+
+		header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: #1e5ab8;
+			padding: 20px;
+			text-align: center;
+		}
+
+		header h1 {
+			font-size: 2.5em;
+			color: #f5df04;
+			margin: 0;
+		}
+
+		nav {
+			display: flex;
+		}
+
+		nav a {
+			text-decoration: none;
+			background-color: #ccff00;
+			color: #333;
+			padding: 5px 10px;
+			margin: 0 15px;
+			border-radius: 5px;
+			font-weight: bold;
+			transition: background-color 0.3s ease, transform 0.3s ease;
+		}
+
+		nav a:hover {
+			background-color: #a8e000;
+			transition: all 0.7 ease 0s;
+			transform: scale(1, 1);
+		}
+		.menu{
+			transition: transform 0.3s ease;
+		}
+		.menu:hover {
+			transform: scale(1.1);
+		}
+
+		.content {
+			position: relative;
+			
+		}
+
+		.contenidoimg {
+			margin-right: 30px;
+		}
+
+		.contenedor1{
+    		grid-column: 1 / span 1; /* Ocupa una columna */
+    		width: 90%; /* Haz que ocupe todo el ancho disponible en la columna */
+    		transition: transform 0.5s ease, box-shadow 0.5s ease;
+		}
+		.contenedor1:hover {
+    		transform: scale(1.05);
+    		box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+		}
+		.contenedor-padre:hover{
+			transform: (1.1);
+			transition: all ease 3s
+		}
+		.Bienvenida{
+			background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/87/San_Marino_%26_Likin_-_Puerto_San_Jose%2C_Guatemala.jpg');
+    		background-size: cover;
+    		background-position: center;
+    		background-repeat: no-repeat;
+    		color: white;
+    		padding: 50px;
+    		text-align: center;
+		}
+		@keyframes typing {
+    		from { width: 0; }
+    		to { width: 100%; }
+		}
+		@keyframes blink-caret {
+    		from, to { border-color: transparent; }
+    		50% { border-color: #f5df04; }
+		}
+
+		h2 {
+			color: white;
+		}
+
+		img {
+			box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+			margin: 20px;
+			transition: transform 0.3s ease;
+		}
+		img:hover {
+    		transform: scale(1.1);
+		}
+
+		p {
+			width: 500px;
+			text-align: justify;
+		}
+		footer{
+            font-family: 'Cinzel Decorative', serif;
+            text-align: center;
+            border: 5px solid darkSlateGray;
+        }
+
+		footer {
+			background-color: #ccff00;
+			padding: 10px 20px;
+			text-align: center;
+			position: relative;
+			bottom: 0;
+			width: 96%;
+		}
+
+		.foto1{
+			position: relative;
+			left:700px;
+			bottom: 223px;
+
+		}
+
+		footer p {
+			color: black;
+			margin: 0;
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+
+		footer a {
+			color: green;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		footer a:hover {
+			text-decoration: underline;
+		}
+		section{
+			padding: 50px;
+    		text-align: center;
+		}
+		.overlay {
+    		background-color: rgba(0, 0, 0, 0.5);
+    		height: 100%;
+    		display: flex;
+    		flex-direction: column;
+    		justify-content: left;
+    		align-items: center;
+    		color: white;
+		}
+
+		.overlay h2 {
+   			font-size: 2.5em;
+    		margin: 0;
+		}
+
+		.overlay p {
+			width: 300px;
+    		font-size: 1.2em;
+		}
+		.video{
+			line-height: 1.2;
+			left: 110%;
+			position: absolute;
+			background-color: rgba(255,255,255,0.9);
+			border-radius: 5px;
+		}
+		.video2{
+			line-height: 1.2;
+			left: 110%;
+			position: absolute;
+			background-color: rgba(255,255,255,0.9);
+			border-radius: 5px;
+			bottom: 40%;
+		}
+
+/* Secciones de Información */
+		.info-section {
+    		display: grid;
+    		grid-template-columns: 1fr 1fr;
+    		padding: 40px;
+    		background-color: #fff;
+    		gap: 20px;
+}
+
+		.info-card {
+    		background-color: #f5f5f5;
+    		padding: 20px;
+    		border-radius: 10px;
+    		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.info-card h2 {
+    		color: #333;
+		}
+
+		.info-card img {
+    		max-width: 310px;
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+    		margin: 20px;
+    		transition: transform 0.3s ease;
+		}
+		.info-card img:hover{
+			transform: scale(1.1);
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Escuintla</h1>
+		<div class="menu">
+		<nav>
+			<a href="index.html">Sobre Escuintla</a>
+			<a href="Lugares.html">Lugares Turísticos</a>
+			<a href="Comida.html">Comida</a>
+			<a href="Tradiciones.html">Tradiciones</a>
+			<a href="Costumbres.html">Costumbres</a>
+		</nav>
+		</div>
+	</header>
+	<br>
+	<section class="Bienvenida" class="parallax">
+		<div class="overlay">
+    		<h2>Bienvenidos a Escuintla</h2>
+    	</div>
+	</section>
+	<section id="sobre" class="info-section">
+		<div class="contenedor-padre">
+		<div class="contenedor1">
+		<div class="content">
+		<div class="info-card">
+		<div class="overlay">
+			<div class="video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/epO3Gg16JPU?si=Nfr9a8MdkIdol8WS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<h2>Cultura de Escuintla</h2>
+			<p>
+			Escuintla es uno de los veintidós departamentos que conforman Guatemala, situado en el centro-sur del país (en la región V). Posee una extensión territorial de 4384 km². Su cabecera departamental del mismo nombre, es la ciudad más importante del departamento con una población aproximada de 791,639 habitantes. Limita al norte con los departamentos de Guatemala, Sacatepéquez y Chimaltenango, al este con Santa Rosa y al oeste con Suchitepéquez, al sur con el Océano Pacífico.
+			</p>
+	
+			<br>
+			<h2>Clima en Escuintla</h2>
+			<p>
+				El clima en Escuintla es cálido y tropical, con temperaturas que oscilan generalmente entre los 22°C y los 28°C durante el día. Los meses más calurosos pueden alcanzar temperaturas cercanas a los 30°C, mientras que las mínimas suelen rondar los 22°C por la noche. Durante la temporada de lluvias, que va de mayo a octubre, hay una alta probabilidad de precipitaciones, especialmente en las tardes, lo que contribuye a una humedad elevada.
+			</p>
+			<div class="contenidoimg">
+			<img width="310" src="https://static1.mclcm.net/iod/images/v2/132/citytheque/localite_104_71/1200x630_100_300_000000x30x0.jpg" title="Clima en Escuintla" alt="Clima en Escuintla">
+			<img width="310" src="https://www.chapintv.com/wp-content/uploads/2024/06/P2-9-1024x557.jpg" title="Mapa Climatico" alt="Mapa">
+			<div class="video2">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/ebbgBtNrRz8?si=Akl-WonyqaJ0CIJd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+	</section>
+	<hr>
+	<h1>Dato Curioso sobre Guatemala</h1>
+	<h2>Independencia de Guatemala</h2>
+	<p>La independencia de Guatemala, y de Centroamérica en general, se proclamó el 15 de septiembre de 1821. Este acontecimiento fue el resultado de influencias externas, como las guerras de independencia en América del Sur y México, y factores internos como el descontento de las élites criollas con el dominio colonial español.</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/i30dJxVtXo8?si=OZG49G05oR3jqegY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<footer>
+		<p>&copy; 2024 Escuintla. Andree Barrundia. <a href="https://muniescuintla.gob.gt/historia-de-escuintla/">Contactanos</a></p>
+	</footer>
+</body>
+</html>

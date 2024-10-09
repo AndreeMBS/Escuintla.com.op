@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Andree Barrundia">
+    <meta name="viewport" content="width=device-width">
+    <title>Escuintla</title>
+    <style type="text/css">
+        html{
+            scroll-behavior: smooth;
+        }
+        h1 {
+            overflow: hidden;
+            border-right: 0.15em solid #f5df04;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 0.15em;
+            animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+        }
+        body {
+            background-color: #b3d9ff;
+             font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1e5ab8;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #f5df04;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            text-decoration: none;
+            background-color: #ccff00;
+            color: #333;
+            padding: 5px 10px;
+            margin: 0 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #a8e000;
+            transition: all 0.7 ease 0s;
+            transform: scale(1, 1);
+        }
+        .menu{
+            transition: transform 0.3s ease;
+        }
+        .menu:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            position: relative;
+            
+        }
+
+        .contenidoimg {
+            margin-right: 30px;
+        }
+
+        .contenedor1{
+            grid-column: 1 / span 1; /* Ocupa una columna */
+            width: 65%; /* Haz que ocupe todo el ancho disponible en la columna */
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        .contenedor1:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .contenedor-padre:hover{
+            transform: (1.1);
+            transition: all ease 3s
+        }
+        .Bienvenida{
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/87/San_Marino_%26_Likin_-_Puerto_San_Jose%2C_Guatemala.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #f5df04; }
+        }
+
+        h2 {
+            color: white;
+        }
+
+        img {
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+            margin: 20px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        p {
+            width: 500px;
+            text-align: justify;
+        }
+        footer{
+            font-family: 'Cinzel Decorative', serif;
+            text-align: center;
+            border: 5px solid darkSlateGray;
+        }
+
+        footer {
+            background-color: #ccff00;
+            padding: 10px 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 96%;
+        }
+
+        .foto1{
+            position: relative;
+            left:700px;
+            bottom: 223px;
+
+        }
+
+        footer p {
+            color: black;
+            margin: 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        footer a {
+            color: green;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        section{
+            padding: 50px;
+            text-align: center;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: center;
+            color: #43ff7f;
+        }
+
+        .overlay h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .overlay p {
+            width: 500px;
+            font-size: 1.2em;
+        }
+        .curiosidades {
+            position: absolute;
+            right: -350px;
+            top: 20px;
+            color: black;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .curiosidades h2 {
+            max-width: 60%;
+            padding: 10%;
+        }
+
+        .curiosidades p {
+            max-width: 60%;
+            margin: 0 auto;
+        }
+
+
+</style>
+<body>
+	<header>
+		<h1>Escuintla</h1>
+        <div class="menu">
+		<nav>
+		    <a href="index.html">Sobre Escuintla</a>
+		    <a href="Lugares.html">Lugares Turísticos</a>
+		    <a href="Comida.html">Comida</a>
+		    <a href="Tradiciones.html">Tradiciones</a>
+		    <a href="Costumbres.html">Costumbres</a>
+		</nav>
+        </div>
+	</header>
+    <br>
+    <section id="sobre" class="info-section">
+        <div class="contenedor-padre">
+        <div class="contenedor1">
+        <div class="content">
+        <div class="info-card">
+        <div class="overlay">
+        <h2>Museo Las Ilusiones</h2>
+        <p>
+            El Museo Las Ilusiones, también conocido como Museo Cultura Cotzumalguapa, se erige majestuoso en el municipio de Santa Lucía Cotzumalguapa, Escuintla. Situado dentro de la Finca Las Ilusiones, este museo es un verdadero tesoro arqueológico que preserva el legado prehispánico de la región.
+            El museo fue fundado por Ricardo Muñoz Gálvez a principios de los años 2000, con el objetivo de conservar y exhibir las valiosas piezas arqueológicas descubiertas en la Finca Las Ilusiones. Esta finca, anteriormente dedicada a la explotación cafetalera y de caña de azúcar, albergaba un rico patrimonio prehispánico.
+        </p>
+        <img width="310" src="https://guategt.com/wp-content/uploads/2023/10/museo_las_ilusiones4.jpg" title="Museo">
+        <div class="curiosidades">
+            <h2>Curiosidades de los lugares turísticos</h2>
+            <p>
+               Cualquier época es ideal para conocer lugares de clima caluroso, en donde abunda la belleza natural y los sitios refrescantes. Escuintla es un hermoso departamento que se encuentra ubicado en la región centro-sur del país, cuenta con muchos tesoros, los cuales puedes explorar y divertirte al máximo. 
+            </p>
+        </div>
+        <h2>Playa El Paredón</h2>
+        <p>
+            La playa El Paredón, ubicada en el departamento de Escuintla, es una de las playas más populares de la costa pacífica de Guatemala. Esta playa se ha convertido en un destino ideal tanto para surfistas como para turistas que buscan relajarse en un ambiente tranquilo y natural.
+        </p>
+        <img width="310" src="https://www.soy502.com/sites/default/files/styles/full_node/public/2021/Nov/29/escuintla_el_paredon_hoteles_restaurantes_turismo_guatemala_guatemorfosis_banco_industrial_pepsi_1.jpg" title="Playa El Paredón">
+        <h2>Volcán de Pacaya</h2>
+        <p>
+            El Volcán de Pacaya es uno de los volcanes más emblemáticos y activos de Guatemala, ubicado a unos 30 kilómetros al sur de la Ciudad de Guatemala, en el departamento de Escuintla.
+            El Volcán de Pacaya ha tenido actividad eruptiva desde la época precolombina. Documentos históricos indican que erupciones han ocurrido desde el siglo XVI. Las erupciones más recientes se registraron en 2021 y 2022.
+        </p>
+        <img width="310" src="https://tropicanahostel.com/wp-content/uploads/2021/11/Volcan-Pacaya.jpg" title="Volcan-Pacaya">
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Escuintla. Andree Barrundia. <a href="https://muniescuintla.gob.gt/historia-de-escuintla/">Contactanos</a></p>  
+        </footer>
+</body>
+</html>
